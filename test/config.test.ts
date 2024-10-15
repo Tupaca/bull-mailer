@@ -7,6 +7,7 @@ describe('initMailConfig', () => {
       nodemailer: {
         host: "smtp.example.com",
         port: 587,
+        pool: true,
         auth: {
           user: "user@example.com",
           pass: "password",

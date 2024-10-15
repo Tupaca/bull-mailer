@@ -1,4 +1,5 @@
 import { RedisOptions } from "ioredis";
+import { Options } from "nodemailer/lib/smtp-pool";
 
 export interface TransportOptions {
   host?: string;
@@ -20,6 +21,6 @@ export interface TransportOptions {
 }
 
 export interface MailerConfig {
-  nodemailer: TransportOptions;
+  nodemailer: Options;
   redis: RedisOptions;
 }

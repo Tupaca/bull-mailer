@@ -27,6 +27,9 @@ const config: MailerConfig = {
   nodemailer: {
     host: "smtp.example.com",
     port: 587,
+    poll: true,
+    maxConnections: 3,
+    maxMessages: 1
     auth: {
       user: "user@example.com",
       pass: "password",

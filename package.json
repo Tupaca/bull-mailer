@@ -8,12 +8,11 @@
     "start": "ts-node src/index.ts",
     "test": "jest"
   },
-  "author": "",
+  "author": "Tupaca",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@tupaca/mailer": "file:",
-    "bull": "^4.16.3",
+        "bull": "^4.16.3",
     "ioredis": "^5.4.1",
     "nodemailer": "^6.9.15"
   },

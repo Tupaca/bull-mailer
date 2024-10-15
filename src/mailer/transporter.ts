@@ -7,9 +7,10 @@ export const createTransporter = () => {
   const transporter = nodemailer.createTransport({
     ...config,
     auth: {
-      user: config.auth.user,
-      pass: config.auth.pass,
+      user: config.auth?.user,
+      pass: (config.auth as { pass: string }).pass,
     },
+    pool: config.pool || true,
     secure: config.secure || false,
     tls: {
       rejectUnauthorized: false,
