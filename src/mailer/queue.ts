@@ -35,7 +35,7 @@ emailQueue.process(async (job) => {
   try {
     const transporter = createTransporter();
     const { to, from, subject, text, html } = job.data;
-    let info = await transporter.sendMail({
+    const info = await transporter.sendMail({
       from,
       to,
       subject,
