@@ -4,7 +4,7 @@ import { enqueueEmail } from "../src/mailer/queue";
 jest.mock("../src/mailer/queue");
 
 describe("Mailer", () => {
-  it("debería encolar un correo correctamente", async () => {
+  it("agregar un correo electrónico a la cola", async () => {
     const emailOptions = {
       to: "destinatario@example.com",
       from: '"Tupaca" <no-reply@example.com>',

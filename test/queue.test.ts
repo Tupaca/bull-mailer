@@ -25,7 +25,7 @@ describe("Email Queue Tests", () => {
     jest.clearAllMocks();
   });
 
-  it("should add an email to the queue", async () => {
+  it("agregar email a la cola", async () => {
     const emailOptions = {
       to: "test@example.com",
       from: "no-reply@example.com",
@@ -52,7 +52,7 @@ describe("Email Queue Tests", () => {
     );
   });
 
-  it("should process an email and send it via transporter", async () => {
+  it("procesar un correo electrónico y enviarlo a través del transportador", async () => {
     const job = {
       data: {
         to: "user@example.com",

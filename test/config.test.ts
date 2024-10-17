@@ -2,7 +2,7 @@ import { initializeMailConfig, getMailConfig } from '../src/config';
 import { MailerConfig } from '../src/config/types';
 
 describe('initMailConfig', () => {
-  it('debería inicializar correctamente la configuración', () => {
+  it('inicializar configuración', () => {
     const config: MailerConfig = {
       nodemailer: {
         host: "smtp.example.com",
