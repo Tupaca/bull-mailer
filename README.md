@@ -5,11 +5,11 @@ Este proyecto es un servicio de envío de correos electrónicos utilizando Nodem
 ## Instalación
 
 ```sh
-npm install @tupaca/mailer
+npm install @tupaca/bull-mailer
 ```
 
 ```sh
-yarn add @tupaca/mailer
+yarn add @tupaca/bull-mailer
 ```
 
 ## Scripts
@@ -20,7 +20,7 @@ test: Ejecuta las pruebas.
 ```
 
 ## Inicializacion
-import { initializeMailer } from "@tupaca/mailer";
+import { initializeMailer } from "@tupaca/bull-mailer";
 
 ```js
 const config: MailerConfig = {
